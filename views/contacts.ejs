@@ -1,0 +1,79 @@
+<!---Filename: contacts.ejs
+     Student Name: Rowel Almuete - 301137911 
+      Date: 2022-Feb-03 -->
+<%- include partials/header.ejs%>
+<%- include partials/main_nav.ejs%> 
+
+<!--- Body Begins-->
+<section>
+    <div class="container">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2>Contact Me...</h2>
+              <p>I am happy to help....</p>
+            </div>
+          </div>
+     </section>
+     <section><div></div><hr></section>
+<section>
+    <div class="section">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 col-12">
+                <h3 class="text-lg-start">WHO AM I&nbsp;&nbsp;</h3>
+                <p>I am a freelance IT Engineer with extensive experience in software development and 
+                  services. Currently, I'm studying at Centennial College taking up Software Engineering Technology. I'm offering software development, Technical Support, and Project Management&nbsp; &nbsp;</p>
+              </div>
+              <div class="col-md-4 col-12 col-lg-3">
+                <h3 class="text-center">GET IN TOUCH</h3>
+                <address class="text-center">
+                  <strong>Rowel Almuete</strong><br>
+                  50 Highgate Drive, Markham<br>
+                  ON, L3R 3R7, Canada<br>
+                  <abbr title="Rowel's Phone Number">P:</abbr> (+1) 437-9808096<br>
+                  <abbr title="Rowel's Email">M:</abbr> roelma2000@gmail.com
+                </address>
+              </div>
+              <div class="col-md-4 col-12 col-lg-5">
+                <h3 class="text-center">ASK ME&nbsp;</h3>
+   <!---Use was-validated class from Bootstrap 5 to validate the form b4 calling submitMe function 
+        Note: I got the code from https://www.w3schools.com/-->  
+    <form action="/" class="was-validated" onsubmit=submitMe()>
+                  <div class="form-group">
+                  <table width="400" border="0">
+      <tbody>
+        <tr>
+          <td align="right"><label>Email: &nbsp;&nbsp;</label></td>
+          <td><input type="email" class="form-control" id="email" placeholder="Enter email" required></td>
+        </tr>
+        <tr>
+          <td align="right"><label>Last Name: &nbsp;&nbsp;</label></td>
+          <td><input type="text" class="form-control" id="lname" placeholder="Enter Last Name" required></td>
+        </tr>
+        <tr>
+          <td align="right"><label>First Name: &nbsp;&nbsp;</label></td>
+          <td><input type="text" class="form-control" id="fname" placeholder="Enter First Name" required></td>
+        </tr>
+          <tr>
+          <td align="right"><label>Message:&nbsp;&nbsp;</label></td>
+          <td><textarea type="text"  class="form-control"  placeholder="Your Message" id="message" required></textarea></td>
+        </tr>
+          <tr>
+          <td>&nbsp;</td><td><button type="submit" class="btn btn-dark mt-2"  >Submit</button></td>
+          </tr>
+      </tbody>
+    </table>
+    
+                      </div>
+                </form>
+                
+  
+              </div>
+            </div>
+          </div>
+        </div>
+           </section>
+           
+ <!--- Footer Begins-->
+ 
+ <%- include partials/footer.ejs%> 

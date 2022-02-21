@@ -1,0 +1,13 @@
+<!---Filename: error.ejs
+     Student Name: Rowel Almuete - 301137911 
+      Date: 2022-Feb-03 -->
+<%- include partials/header.ejs%>
+<%- include partials/main_nav.ejs%>   
+
+
+<!--- Body Begins-->>
+<h1><%= message %></h1>
+<h2><%= error.status %></h2>
+<pre><%= error.stack %></pre>
+<!--- Footer Begins-->>
+<%- include partials/footer.ejs%> 

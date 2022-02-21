@@ -1,0 +1,25 @@
+/*  Filename: app.css
+    Student Name: Rowel Almuete - 301137911 
+    Date: 2022-Feb-03 */
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background-color: #1d1c1c;
+    font-size: 12px;
+}
+  
+  footer .copyright {
+    padding: 10px 0;
+    color: rgb(252, 251, 255);
+    margin-top: 20px;
+
+  }
+  
+  footer .copyright span {
+    color: #f8fbfc;
+  }
+  
