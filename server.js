@@ -4,8 +4,8 @@
  * Module dependencies.
  */
 
-var app = require('./app');
-var debug = require('debug')('lab1-expressportfolio:server');
+var app = require('./config/app');
+var debug = require('debug')('lab2-expressauthentication:server');
 var http = require('http');
 
 /**
