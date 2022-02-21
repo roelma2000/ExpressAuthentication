@@ -6,13 +6,13 @@ let logger = require('morgan');
 let mongoose = require('mongoose');
 
 //setting the database
-//let DB = require('./db');
-// mongoose.connect(DB.URI);
-// let mongoDB=mongoose.connection;
-// mongoDB.on('error',console.error.bind(console,"Connection Error"));
-// mongoDB.once('open',()=>{
-//   console.log("connected to database")
-// });
+let DB = require('./db');
+mongoose.connect(DB.URI);
+let mongoDB=mongoose.connection;
+mongoDB.on('error',console.error.bind(console,"Connection Error"));
+mongoDB.once('open',()=>{
+  console.log("connected to database")
+});
 
 let indexRouter = require('../routes/index');
 let usersRouter = require('../routes/users');

@@ -26,7 +26,7 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/roelma2000/ExpressPortfolio.git"
+    "url": "git+https://github.com/roelma2000/ExpressAuthentication.git"
   },
   "keywords": [
     "Express"
@@ -34,8 +34,8 @@
   "author": "Rowel Almuete",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/roelma2000/ExpressPortfolio/issues"
+    "url": "https://github.com/roelma2000/ExpressAuthentication/issues"
   },
-  "homepage": "https://github.com/roelma2000/ExpressPortfolio#readme",
-  "description": "Express Portfolio Assignment 1"
+  "homepage": "https://github.com/roelma2000/ExpressAuthentication#readme",
+  "description": "Express Portfolio Assignment 2"
 }
