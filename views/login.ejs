@@ -1,0 +1,35 @@
+<!---Filename: login.ejs
+     Student Name: Rowel Almuete - 301137911 
+      Date: 2022-Feb-23 -->
+      <%- include partials/header.ejs%>
+      <%- include partials/main_nav.ejs%>   
+        
+      <!--- Body Begins-->
+         
+      <main>
+        <h2><%= title %></h2>
+            <table class="table">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">Username</th>
+                    <th scope="col">Password</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Address</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <% for(let cnt=0;cnt<LoginList.length;cnt++){ %>
+                  <tr>
+                    <td><%= LoginList[cnt].username%></td>
+                    <td><%= LoginList[cnt].password%></td>
+                    <td><%= LoginList[cnt].email%></td>
+                    <td><%= LoginList[cnt].address%></td>
+                  </tr>
+                  <% } %>
+                 
+                </tbody>
+              </table>
+   
+            </main>
+      <!--- Footer Begins-->
+       <%- include partials/footer.ejs%> 

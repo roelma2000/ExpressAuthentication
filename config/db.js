@@ -1,3 +1,3 @@
 module.exports={
-    "URI" : "mongodb://localhost:27019/ExpressAuthDB"
+    "URI" : "mongodb://127.0.0.1:27018/ExpressAuthDB"
 }

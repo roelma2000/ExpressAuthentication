@@ -28,4 +28,7 @@ router.get('/services', function(req, res, next) {
 router.get('/contacts', function(req, res, next) {
   res.render('contacts', { title: 'Contact' });
 });
+// router.get('/user-list', function(req, res, next) {
+//   res.render('user', { title: 'User' });
+// });
 module.exports = router;

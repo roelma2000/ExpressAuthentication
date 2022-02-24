@@ -23,7 +23,7 @@
     "node": "v16.13.0",
     "npm": "^8.1.0"
   },
-  "main": "app.js",
+  "main": "server.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/roelma2000/ExpressAuthentication.git"
