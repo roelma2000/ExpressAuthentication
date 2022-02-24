@@ -1,0 +1,73 @@
+<!---Filename: add.ejs
+     Student Name: Rowel Almuete - 301137911 
+      Date: 2022-Feb-23 -->
+      <%- include ../partials/header %>
+      
+      <%- include ../partials/main_nav %>   
+        
+      <!--- Body Begins-->
+
+      <section>
+        <div class="mt-2">
+              <div class="container">
+                <div class="row">
+                  <div >
+                    <h5><%= title %></h5>
+                    <p></p>
+                   <!---INSERT FORM HERE-->
+                <form class="form" method="POST">
+                  <div class="form-group">
+                      <label for="usernameTxt">User Name</label>
+                      <input type="text" class="form-control"
+                      id="usernameTxt"
+                      placeholder="Enter Prefered Username"
+                      name="username" required>
+                  </div>
+  
+                  <div class="form-group">
+                      <label for="passwordTxt">Password</label>
+                      <input type="text" class="form-control"
+                      id="passwordTxt"
+                      placeholder="Enter the Password"
+                      name="password" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="emailTxt">Email</label>
+                      <input type="email" class="form-control"
+                      id="emailTxt"
+                      placeholder="Enter Email"
+                      name="email" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="addressTxt">Address</label>
+                      <input type="text" class="form-control"
+                      id="addressTxt"
+                      placeholder="Enter Address"
+                      name="address" required>
+                  </div>
+                  <div><p></p>
+                  <button class="btn btn-primary" type="submit">
+                      <i class="fas fa-edit"></i> Submit</button>
+                  
+                      <a href="/login-list" class="btn btn-warning">
+                          <i class="fas fa-undo"></i> Cancel</a>
+                  </div>
+                  
+  
+              </form>
+                    <!-------------------------------------->
+                  </div>
+                  
+                  
+                <div><p>
+                   <!---Placeholder
+                    -->
+                   
+                </p></div>
+                </div>
+              </div>
+            </div>
+   </section>
+            
+      <!--- Footer Begins-->
+       <%- include ../partials/footer %> 
