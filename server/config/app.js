@@ -1,3 +1,8 @@
+//  Filename: apps.js
+//  Student Name: Rowel Almuete - 301137911
+//  Date: 2022-Feb-03
+//  Modified: 2022-Feb-26
+
 //3rd party modules
 let createError = require('http-errors');
 let express = require('express');
@@ -29,7 +34,7 @@ mongoDB.once('open',()=>{
 
 let indexRouter = require('../routes/index');
 let usersRouter = require('../routes/users');
-let loginRouter = require('../routes/login');
+let contactsRouter = require('../routes/contacts_routes');
 
 const { Console } = require('console');
 
@@ -77,7 +82,7 @@ passport.deserializeUser(User.deserializeUser());
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/login-list',loginRouter);
+app.use('/contact-list',contactsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

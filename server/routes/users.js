@@ -1,3 +1,8 @@
+//  Filename: users.js
+//  Student Name: Rowel Almuete - 301137911
+//  Date: 2022-Feb-03
+
+
 var express = require('express');
 var router = express.Router();
 

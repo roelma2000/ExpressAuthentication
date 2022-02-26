@@ -1,6 +1,6 @@
 <!---Filename: add.ejs
      Student Name: Rowel Almuete - 301137911 
-      Date: 2022-Feb-23 -->
+      Date: 2022-Feb-26 -->
       <%- include ../partials/header %>
       
       <%- include ../partials/main_nav %>   
@@ -17,19 +17,19 @@
                    <!---INSERT FORM HERE-->
                 <form class="form" method="POST">
                   <div class="form-group">
-                      <label for="usernameTxt">User Name</label>
+                      <label for="contactNameTxt">Contact Name</label>
                       <input type="text" class="form-control"
-                      id="usernameTxt"
-                      placeholder="Enter Prefered Username"
-                      name="username" required>
+                      id="contactNameTxt"
+                      placeholder="Enter Preferred Contact Name"
+                      name="contactName" required>
                   </div>
   
                   <div class="form-group">
-                      <label for="passwordTxt">Password</label>
-                      <input type="text" class="form-control"
-                      id="passwordTxt"
-                      placeholder="Enter the Password"
-                      name="password" required>
+                      <label for="contactNumTxt">Contact Number</label>
+                      <input type="number" class="form-control"
+                      id="contactNumTxt"
+                      placeholder="Enter Contact Num"
+                      name="contactNum" required>
                   </div>
                   <div class="form-group">
                       <label for="emailTxt">Email</label>
@@ -38,18 +38,11 @@
                       placeholder="Enter Email"
                       name="email" required>
                   </div>
-                  <div class="form-group">
-                      <label for="addressTxt">Address</label>
-                      <input type="text" class="form-control"
-                      id="addressTxt"
-                      placeholder="Enter Address"
-                      name="address" required>
-                  </div>
                   <div><p></p>
                   <button class="btn btn-primary" type="submit">
                       <i class="fas fa-edit"></i> Submit</button>
                   
-                      <a href="/login-list" class="btn btn-warning">
+                      <a href="/contact-list" class="btn btn-warning">
                           <i class="fas fa-undo"></i> Cancel</a>
                   </div>
                   

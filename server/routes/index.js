@@ -1,7 +1,7 @@
  //  Filename: index.js
  //  Student Name: Rowel Almuete - 301137911 
- //  Date: 2022-Feb-03
- //  Modified: 2022-Feb-25
+ //  Date: 2022-Feb-23
+ //  Modified: 2022-Feb-26
 var express = require('express');
 var router = express.Router();
 let indexController = require('../controllers/index');
@@ -38,5 +38,6 @@ let indexController = require('../controllers/index');
 
  /** GET route to log out  */
  router.get('/logout', indexController.performLogout);
+
 
 module.exports = router;

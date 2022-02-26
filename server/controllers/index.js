@@ -1,3 +1,7 @@
+//  Filename: index.js
+//  Student Name: Rowel Almuete - 301137911
+//  Date: 2022-Feb-26
+
 let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
@@ -68,7 +72,7 @@ module.exports.processLoginPage = (req, res, next) => {
 
             }
             //Give access
-            return res.redirect('/login-list');
+            return res.redirect('/contact-list');
         });
     })(req, res, next);
 
@@ -116,7 +120,7 @@ module.exports.processRegisterPage = (req, res, next) => {
 
             return passport.authenticate('local')(req, res, () => {
 
-                res.redirect('/login-list')
+                res.redirect('/contact-list')
 
             });
         }

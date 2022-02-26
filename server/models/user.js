@@ -1,3 +1,7 @@
+//  Filename: user.js
+//  Student Name: Rowel Almuete - 301137911
+//  Date: 2022-Feb-23
+
 let mongoose = require('mongoose');
 let passportLocalMongoose = require('passport-local-mongoose');
 
