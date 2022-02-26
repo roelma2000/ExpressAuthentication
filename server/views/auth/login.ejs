@@ -1,0 +1,58 @@
+<!---Filename: auth > login.ejs
+     Student Name: Rowel Almuete - 301137911
+      Date: 2022-Feb-23 -->
+<%- include ../partials/header %>
+
+<%- include ../partials/main_nav %>
+
+<!--- Body Begins-->
+<section>
+    <!--- display connect-flash messages -->
+    <%if (messages.length > 0) { %>
+        <div class="alert alert-danger">
+            <%= messages %>
+        </div>
+    <% } %>
+    <div class="mt-2">
+        <div class="container">
+            <div class="row">
+                <div >
+                    <h5><%= title %></h5>
+                    <p></p>
+                    <!---INSERT FORM HERE-->
+                    <div class="form-group">
+                    <form method="POST" autocomplete="off">
+                        <fieldset class="form-group">
+
+                            <label for="username" >Username: </label>
+                            <input type="text" class="form-control"
+                                   name="username" placeholder="Enter Username"
+                                   id="username" required autofocus >
+                            <label for="password" >Password: </label>
+                                <input type="password" class="form-control"
+                                       name="password" placeholder="Enter Password"
+                                       id="password" required autofocus > or
+                                <a href="/registration">Register Here</a>
+                          </fieldset>
+                            <fieldset class="form-group text-right">
+                                <input type="submit" class="btn btn-success" value="Login">
+                                <a href="/">
+                                    <input type="button" class="btn btn-warning" value="Cancel">
+                                </a>
+                            </fieldset>
+
+                    </form>
+                    <!-------------------------------------->
+                </div>
+               <div><p>
+                        <!---Placeholder
+                         -->
+                    </p></div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!--- Footer Begins-->
+<%- include ../partials/footer %>

@@ -1,34 +1,42 @@
  //  Filename: index.js
  //  Student Name: Rowel Almuete - 301137911 
- //  Date: 2022-Feb-03 
+ //  Date: 2022-Feb-03
+ //  Modified: 2022-Feb-25
 var express = require('express');
 var router = express.Router();
+let indexController = require('../controllers/index');
 
-/*   GET home page and  RENDER page views.*/
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Home' });
-});
+ /* GET home page. */
+ router.get('/', indexController.displayHomePage);
 
-router.get('/home', function(req, res, next) {
-  res.render('index', { title: 'Home' });
-});
+ /* GET home page. */
+ router.get('/home', indexController.displayHomePage);
 
-router.get('/about', function(req, res, next) {
-  res.render('about', { title: 'About Me' });
-});
+ /* GET About page. */
+ router.get('/about', indexController.displayAboutPage);
 
-router.get('/projects', function(req, res, next) {
-  res.render('projects', { title: 'Projects' });
-});
+ /* GET Services page. */
+ router.get('/services', indexController.displayServicesPage);
 
-router.get('/services', function(req, res, next) {
-  res.render('services', { title: 'Services' });
-});
+ /* GET Products page. */
+ router.get('/projects', indexController.displayProjects);
 
-router.get('/contacts', function(req, res, next) {
-  res.render('contacts', { title: 'Contact' });
-});
-// router.get('/user-list', function(req, res, next) {
-//   res.render('user', { title: 'User' });
-// });
+ /* GET Contact page. */
+ router.get('/contacts', indexController.displayContactPage);
+
+ /* GET Route for displaying the login page. */
+ router.get('/login', indexController.displayLoginPage);
+
+ /* Post Route for process the login page. */
+ router.post('/login', indexController.processLoginPage);
+
+ /* GET Route for display the register page. */
+ router.get('/registration', indexController.displayRegisterPage);
+
+ /* Post Route for process  the register page. */
+ router.post('/registration', indexController.processRegisterPage);
+
+ /** GET route to log out  */
+ router.get('/logout', indexController.performLogout);
+
 module.exports = router;

@@ -17,8 +17,8 @@ module.exports.displayUserList = (req, res, next) => {
            // console.log(loginList);
            //'login' => views 
            //title: 'Login List' ==> Pass to view page
-           //LoginList ==> object storage / same as loginList 
-           res.render('login/list', {title: 'Login List', LoginList: loginList})            
+           //LoginList ==> object storage / same as loginList
+          res.render('login/list', { title: 'Login List', LoginList: loginList,displayName: req.user ? req.user.displayName : ""  });
         }
     });
 }
